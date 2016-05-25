@@ -1,0 +1,27 @@
+.todo-container {
+  font-family: "Roboto";
+  position: relative;
+  max-width: 800px;
+  min-height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 -1px 0 #e5e5e5,
+              0 0 2px rgba(0,0,0,.12),
+              0 2px 4px rgba(0,0,0,.24);
+}
+
+.todo-form-container > form > input {
+  border: none;
+  border-bottom: 2px solid steelblue;
+}
+
+.ng2do {
+  position: absolute;
+  padding: 15px;
+  font-size: 30px;
+  color: steelblue;
+  top: -10px;
+  left: 10px;
+}
