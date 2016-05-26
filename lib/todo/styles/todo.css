@@ -2,11 +2,12 @@
   font-family: "Roboto";
   position: relative;
   max-width: 800px;
-  min-height: 300px;
+  min-height: 100px;
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
   padding: 10px;
+  margin-top: 50px;
   box-shadow: 0 -1px 0 #e5e5e5,
               0 0 2px rgba(0,0,0,.12),
               0 2px 4px rgba(0,0,0,.24);
@@ -15,6 +16,34 @@
 .todo-form-container > form > input {
   border: none;
   border-bottom: 2px solid steelblue;
+  width: 100%;
+  padding: 7px 2px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  outline: none;
+  font-size: 16px;
+}
+
+.todo-form-container > form > button {
+  border: none;
+  background-color: steelblue;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 10px 17px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+  border: 1px solid steelblue;
+}
+
+.todo-form-container > form > button:active {
+  color: steelblue;
+  background-color: #fff;
 }
 
 .ng2do {
@@ -22,6 +51,11 @@
   padding: 15px;
   font-size: 30px;
   color: steelblue;
-  top: -10px;
-  left: 10px;
+  top: -60px;
+  left: 0;
+  background-color: #fff;
+}
+
+.to-be-done {
+  border-bottom: 1px solid #eee;
 }
