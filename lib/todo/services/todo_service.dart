@@ -1,17 +1,14 @@
-import 'package:angular2/core.dart';
+//import 'dart:async';
+import 'package:angular2/core.dart' show Injectable;
 import '../models/todo.dart';
 
 @Injectable()
 class TodoService {
-  List<Todo> todos = [];
-
-  add(Todo todo) async {
-    this.todos.add(todo);
-    return this.todos;
+  Todo add(Todo todo) {
+    return todo;
   }
 
-  delete(int index) async {
-    this.todos.removeAt(index);
-    return this.todos;
+  int delete(int index) {
+    return index;
   }
 }
