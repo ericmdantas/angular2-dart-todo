@@ -3,6 +3,10 @@ import 'package:angular2/core.dart';
 @Injectable()
 class Todo {
   String msg = '';
+  int id = 0;
 
-  Todo(this.msg);
+  Todo(String m) {
+      this.msg = m;
+      this.id += 1;
+  }
 }
