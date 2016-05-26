@@ -2,14 +2,13 @@
   <h2 class="ng2do">{{name}}</h2>
 
   <div class="todo-form-container">
-    <form>
-      <input type="text" [(ngModel)]="msg"/>
-
-      <button type="button" onsubmit="return false;" (click)="go()">+</button>
+    <form onsubmit="return false;" (submit)="add(todo);">
+      <input type="text" [(ngModel)]="todo.msg"/>
+      <button type="button">+</button>
     </form>
 
     <div *ngFor="let t of todos;" class="to-be-done">
-      <p>{{t}}</p>
+      <p>{{t.msg}}</p>
     </div>
   </div>
 </div>

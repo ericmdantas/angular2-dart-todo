@@ -1,7 +1,8 @@
+import 'package:angular2/core.dart';
+
+@Injectable()
 class Todo {
   String msg = '';
 
-  Todo(String m) {
-    this.msg = m;
-  }
+  Todo(this.msg);
 }

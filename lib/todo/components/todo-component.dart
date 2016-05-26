@@ -1,4 +1,5 @@
 import 'package:angular2/core.dart';
+import 'dart:html';
 import '../models/todo.dart';
 
 @Component(
@@ -8,11 +9,12 @@ import '../models/todo.dart';
     styleUrls: const ["../styles/todo.css"]
   )
 class TodoCmp {
-  String name = 'ng2do';
-  String msg = '';
+  final String name = 'ng2do';
+  Todo todo = new Todo('');
   List<Todo> todos = [];
 
-  go() {
-      this.todos.add("yo!");
+  add(Todo t) {
+      this.todos.add(t);
+      this.todo = new Todo('');
   }
 }
