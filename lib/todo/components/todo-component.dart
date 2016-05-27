@@ -1,4 +1,4 @@
-import 'package:angular2/core.dart';
+import 'package:angular2/core.dart' show Component;
 import '../models/todo.dart';
 import '../services/todo_service.dart';
 
@@ -19,7 +19,11 @@ class TodoCmp {
     this._todoService = _todoService;
   }
 
-  void add(t) {
+  void add(Todo t) {
+    if (t.msg.length == 0) {
+      return;
+    }
+
     this.todos.add(this._todoService.add(t));
     this.todo = new Todo();
   }
