@@ -8,7 +8,7 @@ class TodoService {
     return todo;
   }
 
-  int delete(int index) {
+  int remove(int index) {
     return index;
   }
 }

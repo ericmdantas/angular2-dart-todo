@@ -19,14 +19,12 @@ class TodoCmp {
     this._todoService = _todoService;
   }
 
-  void add(String m) {
-    var _t = new Todo();
-    _t.msg = m;
-
-    this.todos.add(this._todoService.add(_t));
+  void add(t) {
+    this.todos.add(this._todoService.add(t));
+    this.todo = new Todo();
   }
 
   void delete(int index) {
-    this.todos.removeAt(this._todoService.delete(index));
+    this.todos.removeAt(this._todoService.remove(index));
   }
 }
