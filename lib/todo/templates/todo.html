@@ -10,8 +10,9 @@
       <button type="submit">+</button>
     </form>
 
-    <div *ngFor="let t of todos;"
-          class="to-be-done">
+    <div *ngFor="let t of todos; let i = index"
+          class="to-be-done"
+          (click)="delete(i);">
       <p>{{t.msg}}</p>
     </div>
   </div>
